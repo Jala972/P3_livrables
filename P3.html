@@ -23,9 +23,148 @@
   </head>
 
   <body>
-    <header></header>
 
-    <main></main>
+    <header>
+
+      <div id="logo_header">
+        <img
+          id="logo_header_img"
+          src="images/logo/ohmyfood.png"
+          alt="ohmyfood"
+        />
+      </div>
+
+      <div class="container_searchbar">
+
+      <div class="searchbar_logo">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+
+      <div class="searchbar_city">
+        <form method="post" action="traitement.php">
+          <p class="search_city">
+            <input
+              id="city"
+              class="search_city_form"
+              type="text"
+              name="city"
+              value="Paris, Belleville"
+              placeholder="Paris, Belleville"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div class="container_title_explorer">
+
+        <div class="title_header">
+          <h1>Reservez le menu qui vous convient</h1>
+        </div>
+
+        <div class="under_title_header">
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+        </div>
+
+        <div class="explorer_header">
+          <form method="post" action="traitement.php">
+            <p>
+              <input
+                class="search_explorer_header"
+                type="submit"
+                value="Explorer nos restaurants"
+              />
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+    
+      <div class="container_fonctionnement">
+
+        <div class="title_fonctionnement">
+          <h2>Fonctionnement</h2>
+        </div> 
+        
+        <div class="block_fonctionnement">
+
+          
+          <div class="block_fontionnement_number">
+            <p class="fonctionnement_number">1</p>
+          </div>
+
+          <div class="block_fonctionnement_symbol">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          
+          <div class="block_fonctionnement_text">
+            <p class="fonctionnement_text">Choississez un restaurant</p>
+          </div>  
+
+        </div>
+        
+        
+        <div class="block_fonctionnement">
+
+          <div class="block_fontionnement_number">
+            <p class="fonctionnement_number">2</p>
+          </div>
+
+          <div class="block_fonctionnement_symbol">
+            <i class="fa-solid fa-align-justify"></i>
+          </div>
+          
+          <div class="block_fonctionnement_text">
+            <p class="fonctionnement_text">Composez votre menu</p>
+          </div> 
+
+        </div>  
+
+        <div class="block_fonctionnement">
+
+            <div class="block_fontionnement_number">
+              <p class="fonctionnement_number">3</p>
+            </div>
+  
+            <div class="block_fonctionnement_symbol">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            
+            <div class="block_fonctionnement_text">
+              <p class="fonctionnement_text">Degustez au restaurant</p>
+            </div>  
+  
+        </div>
+
+      </div>
+
+
+      <div class="container_restaurant">
+
+
+        <div class="title_restaurant">
+          <h2>restaurants</h2>
+        </div>
+
+        ><div class="block_restaurant">
+          <img 
+            id="block_restaurant_img"
+            src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+            alt="la palette du gout">
+
+          <h3>La palette du goût</h3>
+          <p>Menilmontant</p>
+
+        </div>
+
+      </div>
+
+
+    </main>
     <footer></footer>
   </body>
 </html>
