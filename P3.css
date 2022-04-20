@@ -192,3 +192,41 @@ font-size: 120%;
   font-weight:bold ;
 }
 
+/*Restaurant*/
+
+.container_restaurant {
+    display: flex;
+    flex-direction: column;
+background-color: #f2f2f2;
+width: 105%;
+margin-left: -8px;
+margin-top: 30px;
+justify-content: center;
+    align-items: center;
+}
+
+.title_restaurant {
+    
+    font-size: 120%;
+    margin-left: -240px;
+    margin-bottom: 55px;
+}
+
+.block_restaurant {
+    width: 340px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 25px;
+}
+
+#block_restaurant_img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 340px;
+    height: 150px;
+}
