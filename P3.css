@@ -236,6 +236,12 @@ display: inline;
     border-radius: 20px;
 }
 
+.block_restaurant:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    
+  }
+
 
 .block_restaurant_img {
     width: 330px;
