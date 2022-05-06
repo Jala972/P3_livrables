@@ -19,11 +19,11 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style_P3.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
+    <header class="backgrd_grey">
       <div id="logo_header">
         <img
           id="logo_header_img"
@@ -37,45 +37,35 @@
           <i class="fa-solid fa-location-dot"></i>
         </div>
 
-        <div class="searchbar_city">
-          <form method="post" action="traitement.php">
-            <p class="search_city">
-              <input
-                id="city"
-                class="search_city_form"
-                type="text"
-                name="city"
-                value="Paris, Belleville"
-                placeholder="Paris, Belleville"
-              />
-            </p>
-          </form>
-        </div>
-      </div>
-
-      <div class="container_title_explorer">
-        <div class="title_header">
-          <h1>Reservez le menu qui vous convient</h1>
-        </div>
-
-        <div class="under_title_header">
-          <p>
-            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        <form method="post" action="traitement.php">
+          <p class="search_city">
+            <input
+              id="city"
+              class="search_city_form"
+              type="text"
+              name="city"
+              value="Paris, Belleville"
+              placeholder="Paris, Belleville"
+            />
           </p>
-        </div>
-
-        <div class="explorer_header">
-          <form method="post" action="traitement.php">
-            <p>
-              <input
-                class="search_explorer_header"
-                type="submit"
-                value="Explorer nos restaurants"
-              />
-            </p>
-          </form>
-        </div>
+        </form>
       </div>
+
+      <h1 class="title_header">Reservez le menu qui vous convient</h1>
+
+      <p class="under_title_header">
+        Découvrez des restaurants d'exception, sélectionnés par nos soins.
+      </p>
+
+      <form method="post" action="traitement.php">
+        <p class="search_restaurant position_relative_top">
+          <input
+            class="button"
+            type="submit"
+            value="Explorer nos restaurants"
+          />
+        </p>
+      </form>
     </header>
 
     <main>
@@ -239,16 +229,16 @@
       </div>
 
       <div class="lign_footer">
-        <i class="fa-solid fa-utensils utensils"></i>
-        <p class="utensils_p">
-          <a class="a_footer" href="#">Proposer un restaurant</a>
+        <i class="fa-solid fa-utensils logo_footer"></i>
+        <p class="p_footer">
+          <a class="a_footer_logo" href="#">Proposer un restaurant</a>
         </p>
       </div>
 
       <div class="lign_footer">
-        <i class="fa-solid fa-handshake handshake"></i>
-        <p class="handshake_p">
-          <a class="a_footer" href="#">Devenir partenaire</a>
+        <i class="fa-solid fa-handshake logo_footer"></i>
+        <p class="p_footer">
+          <a class="a_footer_logo" href="#">Devenir partenaire</a>
         </p>
       </div>
 
