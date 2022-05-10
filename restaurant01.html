@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oh My Food</title>
+    <script
+      src="https://kit.fontawesome.com/54da46b3b1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo_header">
+        <img
+          id="logo_header_img"
+          src="images/logo/ohmyfood.png"
+          alt="ohmyfood"
+        />
+      </div>
+    </header>
+    <main class="backgrd_grey">
+      <img
+        id="img_header_page_png"
+        src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="ohmyfood"
+      />
+
+      <div class="container_title_page">
+        <h1 class="title_page">A la Française</h1>
+
+        <i class="fa-solid fa-heart heart_page"></i>
+      </div>
+      <div class="section_food">
+        <h3 class="entrée">ENTREE</h3>
+
+        <div class="bloc_food first">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Tartare de pouple acidulé</h4>
+            <p class="title_food_bloc">Aux zestes d'orange</p>
+          </div>
+
+          <p class="price">25€</p>
+
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <div class="bloc_food second">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Velouté de légumes d'antan</h4>
+            <p class="title_food_bloc">Carottes, panais, topinambour</p>
+          </div>
+
+          <p class="price">35€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="bloc_food last">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Soupe à l'oignon</h4>
+            <p class="title_food_bloc">Revisité</p>
+          </div>
+          <p class="price">20€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <!-- Plats-->
+
+        <h3 class="entrée">PLAT</h3>
+
+        <div class="bloc_food first">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Coquilles Saint-Jacques</h4>
+            <p class="title_food_bloc">Accompagnés d'une purée de panais</p>
+          </div>
+
+          <p class="price">40€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="bloc_food second">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Magré de canard</h4>
+            <p class="title_food_bloc">Et parmentier de pommes de terres</p>
+          </div>
+
+          <p class="price">35€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="bloc_food last">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Pigeonneau d'Ille-et-Vilaine</h4>
+            <p class="title_food_bloc">Sur son lit de gnocchis aux légumes</p>
+          </div>
+
+          <p class="price">44€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <!-- Dessert-->
+
+        <h3 class="entrée">DESSERT</h3>
+
+        <div class="bloc_food first">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Pétales de violettes glacés</h4>
+            <p class="title_food_bloc">Et purée de noisettes</p>
+          </div>
+
+          <p class="price">18€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="bloc_food second">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Fondant au chocolat</h4>
+            <p class="title_food_bloc">Revisité</p>
+          </div>
+
+          <p class="price">22€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="bloc_food last">
+          <div class="title_food">
+            <h4 class="title_food_bloc">Millefeuille croustillant</h4>
+            <p class="title_food_bloc">Myrtilles et pâte d'amande</p>
+          </div>
+
+          <p class="price">23€</p>
+          <div class="price_select">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Entrée-->
+      <!-- Bloc de Commande-->
+      <form method="post" action="traitement.php">
+        <p class="position_relative_bottom">
+          <input class="button" type="button" value="Commander" />
+        </p>
+      </form>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div id="logo_footer">
+        <img
+          id="logo_footer_img"
+          src="images/logo/ohmyfood.png"
+          alt="ohmyfood"
+        />
+      </div>
+
+      <div class="lign_footer">
+        <i class="fa-solid fa-utensils logo_footer"></i>
+        <p class="p_footer">
+          <a class="a_footer_logo" href="#">Proposer un restaurant</a>
+        </p>
+      </div>
+
+      <div class="lign_footer">
+        <i class="fa-solid fa-handshake logo_footer"></i>
+        <p class="p_footer">
+          <a class="a_footer_logo" href="#">Devenir partenaire</a>
+        </p>
+      </div>
+
+      <div class="lign_footer">
+        <p><a class="a_footer" href="#">Mentions Légales</a></p>
+      </div>
+
+      <div class="lign_footer">
+        <p><a class="a_footer" href="#">Contact</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
