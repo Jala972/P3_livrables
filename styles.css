@@ -59,7 +59,7 @@ header {
   align-items: center;
   background-color: #e2e0e0;
   border-top: 1px solid grey;
-  margin-top: 10px;
+  /* margin-top: 27px; */
   width: 100%;
 }
 
@@ -346,7 +346,8 @@ footer {
 
 #logo_header_img {
   width: 50%;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #img_header_page_png {
@@ -370,7 +371,7 @@ footer {
   float: left;
   width: 215px;
   position: relative;
-  bottom: 4px;
+  bottom: 7px;
   left: 5%;
 }
 
@@ -405,43 +406,187 @@ footer {
   background-color: white;
   border-radius: 10px;
   width: 88%;
-  height: 50px;
-  /* min-width: 80%; */
+  /* height: 50px; */
   margin: auto;
-  margin-bottom: 7%;
-  /* position: relative; */
-  bottom: 60px;
+  margin-bottom: 5%;
+  /* bottom: 60px; */
   box-shadow: 0px 5px 8px grey;
+  display: flex;
+  flex-direction: row;
+  /*transform: rotate(0deg);*/
+}
+
+.bloc_food:hover .price_select {
+  display: block;
+  /*transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
+*/
+}
+
+.price {
+  /* float: right; */
+  /* padding-right: 4%; */
+  position: relative;
+  top: 26px;
+  /* background: left; */
+  /* left: 6%; */
+  width: 10%;
+}
+
+.price_select {
+  display: none;
+  /* float: right; */
+  /* position: relative; */
+  background-color: aqua;
+  width: 20%;
+  height: auto;
+  /* padding-top: 40px; */
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.first {
+  animation: fadein 1500ms 700ms;
+  -moz-animation: fadein 1500ms 700ms; /* Firefox */
+  -webkit-animation: fadein 1500ms 700ms; /* Safari et Chrome */
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.second {
+  animation: fadein 1500ms 900ms;
+  -moz-animation: fadein 1500ms 900ms; /* Firefox */
+  -webkit-animation: fadein 1500ms 900ms; /* Safari et Chrome */
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.last {
+  animation: fadein 1500ms 1100ms;
+  -moz-animation: fadein 1500ms 1100ms; /* Firefox */
+  -webkit-animation: fadein 1500ms 1100ms; /* Safari et Chrome */
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fa-check {
+  position: relative;
+  /* float: right; */
+  left: 38%;
+  bottom: -25%;
+  background-color: white; /* height: fit-content; */
+  padding: 4px; /* align-self: center; */ /* margin: auto; */
+  /* justify-content: center; */
+  width: 15px;
+  /* align-items: center; */ /* display: block; */ /* align-content: center; */
+  color: aqua;
+  border-radius: 11px; /* border-bottom-right-radius: 10px; */
 }
 
 .title_food {
+  width: 100%;
+  display: flex;
   float: left;
-  padding-top: 0%;
-  padding-left: 3%;
+  flex-direction: column;
 }
 
-.title_food h4 {
-  padding-left: 5px;
+.title_food_bloc {
+  /* position: relative; */
+  /* top: 7px; */
+  /* left: 10px; */
+  /* padding-left: 10px; */
   margin-top: 5px;
-  width: auto;
-  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-bottom: 5px;
   font-size: 90%;
+  /* width: 81%; */
 }
 
-.title_food p {
-  padding-left: 5px;
-  padding-top: -7px;
-  /* margin-top: 4px; */
-  padding-bottom: -14px;
+.price {
   position: relative;
-  bottom: 6px;
-  font-size: 80%;
-}
-
-.price_food {
-  float: right;
-  padding-right: 4%;
-  padding-top: 1%;
+  top: 15px;
+  right: 15px;
 }
 
 .button {
@@ -451,7 +596,6 @@ footer {
   margin: auto;
   /* margin-bottom: 10px; */ /* top: -30px; */
   border-top: 1px solid #96d1f8;
-  background: #9256dc;
   background: -webkit-gradient(
     linear,
     left top,
