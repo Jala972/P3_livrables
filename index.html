@@ -19,19 +19,18 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
-    <header class="backgrd_grey">
-      <div id="logo_header">
-        <img
-          id="logo_header_img"
-          src="images/logo/ohmyfood.png"
-          alt="ohmyfood"
-        />
-      </div>
+    <div class="loader-wrapper">
+      <div class="lds-hourglass"></div>
+    </div>
+    <header class="index">
+      <img id="logo_header_img" src="images/logo/ohmyfood.png" alt="ohmyfood" />
+    </header>
 
+    <main class="index">
       <div class="container_searchbar">
         <div class="searchbar_logo">
           <i class="fa-solid fa-location-dot"></i>
@@ -50,25 +49,23 @@
           </p>
         </form>
       </div>
+      <div class="backgrd_grey">
+        <h1 class="title_header">Reservez le menu qui vous convient</h1>
 
-      <h1 class="title_header">Reservez le menu qui vous convient</h1>
-
-      <p class="under_title_header">
-        Découvrez des restaurants d'exception, sélectionnés par nos soins.
-      </p>
-
-      <form method="post" action="traitement.php">
-        <p class="search_restaurant position_relative_top">
-          <input
-            class="button"
-            type="submit"
-            value="Explorer nos restaurants"
-          />
+        <p class="under_title_header">
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-      </form>
-    </header>
 
-    <main>
+        <form method="post" action="traitement.php">
+          <p class="search_restaurant">
+            <input
+              class="button"
+              type="submit"
+              value="Explorer nos restaurants"
+            />
+          </p>
+        </form>
+      </div>
       <div class="container_fonctionnement">
         <h2 class="title_fonctionnement">Fonctionnement</h2>
 
@@ -139,9 +136,7 @@
                 <p class="restaurant_p">Menilmontant</p>
               </div>
 
-              <div class="block_restaurant_heart">
-                <i class="fa-solid fa-heart heart_color"></i>
-              </div>
+              <i class="fa-solid fa-heart heart_color"></i>
             </div>
           </div>
         </div>
@@ -165,9 +160,7 @@
                 <p class="restaurant_p">Charonne</p>
               </div>
 
-              <div class="block_restaurant_heart">
-                <i class="fa-solid fa-heart heart_color"></i>
-              </div>
+              <i class="fa-solid fa-heart heart_color"></i>
             </div>
           </div>
         </div>
@@ -188,9 +181,7 @@
                 <p class="restaurant_p">Cité Rouge</p>
               </div>
 
-              <div class="block_restaurant_heart">
-                <i class="fa-solid fa-heart heart_color"></i>
-              </div>
+              <i class="fa-solid fa-heart heart_color"></i>
             </div>
           </div>
         </div>
@@ -210,23 +201,15 @@
                 <p class="restaurant_p">Folie-Méricourt</p>
               </div>
 
-              <div class="block_restaurant_heart">
-                <i class="fa-solid fa-heart heart_color"></i>
-              </div>
+              <i class="fa-solid fa-heart heart_color"></i>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div id="logo_footer">
-        <img
-          id="logo_footer_img"
-          src="images/logo/ohmyfood.png"
-          alt="ohmyfood"
-        />
-      </div>
+    <footer class="index">
+      <img id="logo_footer_img" src="images/logo/ohmyfood.png" alt="ohmyfood" />
 
       <div class="lign_footer">
         <i class="fa-solid fa-utensils logo_footer"></i>
