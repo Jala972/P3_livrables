@@ -19,6 +19,12 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
@@ -26,6 +32,7 @@
     <div class="loader-wrapper">
       <div class="lds-hourglass"></div>
     </div>
+
     <header class="index">
       <img id="logo_header_img" src="images/logo/ohmyfood.png" alt="ohmyfood" />
     </header>
@@ -59,7 +66,7 @@
         <form method="post" action="traitement.php">
           <p class="search_restaurant">
             <input
-              class="button"
+              class="button button_index"
               type="submit"
               value="Explorer nos restaurants"
             />
@@ -75,7 +82,7 @@
           </div>
 
           <div class="block_fonctionnement_symbol">
-            <i class="fa-solid fa-mobile-screen-button"></i>
+            <i class="fa-solid fa-mobile-screen-button fa-style"></i>
           </div>
 
           <div class="block_fonctionnement_text">
@@ -89,7 +96,7 @@
           </div>
 
           <div class="block_fonctionnement_symbol">
-            <i class="fa-solid fa-align-justify"></i>
+            <i class="fa-solid fa-align-justify fa-style"></i>
           </div>
 
           <div class="block_fonctionnement_text">
@@ -116,6 +123,7 @@
         <div class="block_title_restaurant">
           <h2 class="title_restaurant">Restaurants</h2>
         </div>
+
         <a class="redirection_page" href="restaurant03.html">
           <div class="container_restaurant_block">
             <div class="block_restaurant">
@@ -136,80 +144,81 @@
                   <p class="restaurant_p">Menilmontant</p>
                 </div>
 
-                <i class="fa-solid fa-heart heart_color heart_bloc"></i>
+                <i class="fa-solid fa-heart color_white heart_bloc"></i>
               </div>
             </div>
           </div>
         </a>
+
         <a class="redirection_page" href="restaurant02.html">
-        <div class="container_restaurant_block">
-          <div class="block_restaurant">
-            <div class="block_restaurant_img">
-              <img
-                class="restaurant_img"
-                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="la note enchantée"
-              />
-              <div class="img_new">
-                <p>Nouveau</p>
-              </div>
-            </div>
-
-            <div class="underblock_restaurant">
-              <div class="block_restaurant_info">
-                <p class="restaurant_undertitle">La note enchantée</p>
-                <p class="restaurant_p">Charonne</p>
+          <div class="container_restaurant_block">
+            <div class="block_restaurant">
+              <div class="block_restaurant_img">
+                <img
+                  class="restaurant_img"
+                  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="la note enchantée"
+                />
+                <div class="img_new">
+                  <p>Nouveau</p>
+                </div>
               </div>
 
-              <i class="fa-solid fa-heart heart_color heart_bloc"></i>
+              <div class="underblock_restaurant">
+                <div class="block_restaurant_info">
+                  <p class="restaurant_undertitle">La note enchantée</p>
+                  <p class="restaurant_p">Charonne</p>
+                </div>
+                <i class="fa-solid fa-heart color_white heart_bloc"></i>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a class="redirection_page" href="restaurant01.html">
-        <div class="container_restaurant_block">
-          <div class="block_restaurant">
-            <div class="block_restaurant_img">
-              <img
-                class="restaurant_img"
-                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt="A la Française"
-              />
-            </div>
-
-            <div class="underblock_restaurant">
-              <div class="block_restaurant_info">
-                <p class="restaurant_undertitle">A la Française</p>
-                <p class="restaurant_p">Cité Rouge</p>
+        </a>
+        <a class="redirection_page" href="restaurant01.html">
+          <div class="container_restaurant_block">
+            <div class="block_restaurant">
+              <div class="block_restaurant_img">
+                <img
+                  class="restaurant_img"
+                  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt="A la Française"
+                />
               </div>
 
-              <i class="fa-solid fa-heart heart_color heart_bloc"></i>
+              <div class="underblock_restaurant">
+                <div class="block_restaurant_info">
+                  <p class="restaurant_undertitle">A la Française</p>
+                  <p class="restaurant_p">Cité Rouge</p>
+                </div>
+
+                <i class="fa-solid fa-heart heart_color_index heart_bloc"></i>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a class="redirection_page" href="restaurant04.html">
-        <div class="container_restaurant_block">
-          <div class="block_restaurant">
-            <div class="block_restaurant_img">
-              <img
-                class="restaurant_img"
-                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="Le délice des sens"
-              />
-            </div>
-
-            <div class="underblock_restaurant">
-              <div class="block_restaurant_info">
-                <p class="restaurant_undertitle">Le délice des sens</p>
-                <p class="restaurant_p">Folie-Méricourt</p>
+        </a>
+        <a class="redirection_page" href="restaurant04.html">
+          <div class="container_restaurant_block">
+            <div class="block_restaurant">
+              <div class="block_restaurant_img">
+                <img
+                  class="restaurant_img"
+                  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Le délice des sens"
+                />
               </div>
 
-              <i class="fa-solid fa-heart heart_color heart_bloc"></i>
+              <div class="underblock_restaurant">
+                <div class="block_restaurant_info">
+                  <p class="restaurant_undertitle">Le délice des sens</p>
+                  <p class="restaurant_p">Folie-Méricourt</p>
+                </div>
+
+                <i class="fa-solid fa-heart color_white heart_bloc"></i>
+              </div>
             </div>
           </div>
-        </div> 
-      </a>
+        </a>
+      </div>
     </main>
 
     <footer class="index">
