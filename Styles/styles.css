@@ -5,6 +5,14 @@
   --primary: #9256dc;
   --secondary: #ff79da;
   --tertiary: #99e2d0;
+  --gradientcolor: linear-gradient(
+    to right bottom,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
   --background-color: #f2f2f2;
 }
 
@@ -198,7 +206,7 @@ header {
   width: 160px;
   font-size: 1.07rem;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: #575757;
 }
 
@@ -277,7 +285,17 @@ header {
 }
 
 .block_fonctionnement:hover {
-  background-color: #f7d7ee;
+  background-color: #f0efef;
+}
+
+.block_fonctionnement:hover .symbol {
+  color: #9256dc;
+  font-size: 105%;
+}
+
+.symbol {
+  color: #575757;
+  font-size: 105%;
 }
 
 .fonctionnement_number {
@@ -302,7 +320,7 @@ header {
 }
 
 .fa-house {
-  color: var(--primary);
+  color: #575757;
   font-size: 105%;
 }
 
@@ -504,16 +522,6 @@ a:active {
 
 /* Restaurant 01/02/03/04 */
 
-.fa-arrow-left {
-  margin: auto;
-  font-weight: 900;
-  color: black;
-  position: absolute;
-  top: 26px;
-  left: 6%;
-  font-size: 130%;
-}
-
 #img_header_page_png {
   position: relative;
   width: 100%;
@@ -561,7 +569,14 @@ a:active {
 .fa-heart:hover,
 .fa-heart:focus,
 .fa-heart:active {
-  color: var(--primary);
+  background: -webkit-linear-gradient(
+    top right,
+    var(--primary) 30%,
+    var(--secondary) 70%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   /*color: linear-gradient(
     to right bottom,
     #9356dc,
@@ -582,7 +597,7 @@ a:active {
   width: 32px;
   position: relative;
   left: 8%;
-  top: 15px;
+  top: 10px;
   margin-bottom: 30px;
   border-bottom: 3px solid var(--tertiary);
   padding-bottom: 5px;
@@ -604,18 +619,18 @@ a:active {
   margin: auto;
   margin-bottom: 20px;
   overflow: hidden;
-  box-shadow: 0px 5px 8px grey;
+  box-shadow: 0px 0px 10px rgb(158, 157, 157);
   display: flex;
   transition-property: transform;
   transition-timing-function: ease-in-out;
   cursor: pointer;
   position: relative;
-  top: 4px;
+  top: 5px;
 }
 
 .bloc_food:hover .price_select {
   background-color: var(--tertiary);
-  width: 25%;
+  width: 70px;
   height: auto;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -625,8 +640,8 @@ a:active {
   display: flex; /* contexte sur le parent */
   flex-direction: column; /* direction d'affichage verticale */
   justify-content: center; /* alignement vertical */
-  width: 0%;
-  transition-duration: 1s;
+  width: 0px;
+  transition-duration: 500ms;
 }
 
 .price {
@@ -651,114 +666,133 @@ a:active {
   height: 15px;
   color: var(--tertiary);
   border-radius: 15px;
-  transform: rotate(-240deg);
-  transition-duration: 1s;
+  transform: rotate(-480deg);
+  transition-duration: 500ms;
   display: flex;
   margin: auto;
 }
 
 .first {
-  animation: fadein 1500ms 700ms;
-  -moz-animation: fadein 1500ms 700ms; /* Firefox */
-  -webkit-animation: fadein 1500ms 700ms; /* Safari et Chrome */
-  opacity: 0;
+  animation: fadein-translate 1500ms 700ms;
+  -moz-animation: fadein-translate 1500ms 700ms; /* Firefox */
+  -webkit-animation: fadein-translate 1500ms 700ms; /* Safari et Chrome */
   animation-fill-mode: forwards;
+  position: relative;
+  opacity: 0;
 }
 
-@keyframes fadein {
+@keyframes fadein-translate {
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
-@-moz-keyframes fadein {
+@-moz-keyframes fadein-translate {
   /* sur Firefox */
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadein-translate {
   /* sur Safari et Chrome */
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
 
 .second {
-  animation: fadein 1500ms 900ms;
-  -moz-animation: fadein 1500ms 900ms; /* Firefox */
-  -webkit-animation: fadein 1500ms 900ms; /* Safari et Chrome */
+  animation: fadein-translate 1500ms 900ms;
+  -moz-animation: fadein-translate 1500ms 900ms; /* Firefox */
+  -webkit-animation: fadein-translate 1500ms 900ms; /* Safari et Chrome */
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadein {
+@keyframes fadein-translate {
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
-@-moz-keyframes fadein {
+@-moz-keyframes fadein-translate {
   /* sur Firefox */
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadein-translate {
   /* sur Safari et Chrome */
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
 
 .last {
-  animation: fadein 1500ms 1100ms;
-  -moz-animation: fadein 1500ms 1100ms; /* Firefox */
-  -webkit-animation: fadein 1500ms 1100ms; /* Safari et Chrome */
+  animation: fadein-translate 1500ms 1100ms;
+  -moz-animation: fadein-translate 1500ms 1100ms; /* Firefox */
+  -webkit-animation: fadein-translate 1500ms 1100ms; /* Safari et Chrome */
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadein {
+@keyframes fadein-translate {
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
-@-moz-keyframes fadein {
+@-moz-keyframes fadein-translate {
   /* sur Firefox */
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadein-translate {
   /* sur Safari et Chrome */
   from {
     opacity: 0;
+    top: 0px;
   }
   to {
     opacity: 1;
+    top: -5px;
   }
 }
 
@@ -768,7 +802,6 @@ a:active {
 
 .title_food_bloc {
   position: relative;
-  bottom: 10px;
   left: 10px;
   width: 90%;
   text-overflow: ellipsis;
@@ -778,11 +811,11 @@ a:active {
 
 h4 {
   font-size: 1.06rem;
+  bottom: 10px;
 }
 
 .under {
   font-size: 0.92rem;
-  position: relative;
   bottom: 22px;
 }
 
@@ -811,12 +844,12 @@ h4 {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  -webkit-box-shadow: rgb(205, 205, 205) 0px 1px 0;
+  -moz-box-shadow: rgb(205, 205, 205) 0px 1px 0;
+  box-shadow: rgb(205, 205, 205) 0px 1px 0;
+  text-shadow: rgb(205, 205, 205) 0px 1px 0;
   color: white;
-  font-size: 90%;
+  font-size: 100%;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -830,10 +863,10 @@ h4 {
 }
 
 .button:hover {
-  border-top-color: #28597a;
-  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 3px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 1) 0 3px 0;
-  box-shadow: rgba(0, 0, 0, 1) 0 3px 0;
+  -webkit-box-shadow: rgb(205, 205, 205) 0px 1px 0;
+  -moz-box-shadow: rgb(205, 205, 205) 0px 1px 0;
+  box-shadow: rgb(205, 205, 205) 0px 1px 0;
+  text-shadow: rgb(205, 205, 205) 0px 1px 0;
   background: -webkit-gradient(
     linear,
     left top,
@@ -849,7 +882,6 @@ h4 {
 }
 
 .button:active {
-  border-top-color: #1b435e;
   background: -webkit-gradient(
     linear,
     left top,
@@ -883,16 +915,17 @@ h4 {
     left: 27%;
     margin: auto;
     font-size: 160%;
+    color: black;
   }
 
   .title_food_bloc {
     position: relative;
-    bottom: 20px;
     left: 10px;
   }
 
   h4 {
     font-size: 1.06rem;
+    bottom: 20px;
   }
 
   .under {
@@ -904,5 +937,48 @@ h4 {
     width: 20px;
     height: 20px;
     border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 445px) and (max-width: 993px) {
+  /* Ici, le CSS s'applique sur les écrans de 445px à 993px de largeur minimum */
+  :root {
+    font-size: 20px;
+  }
+
+  .fa-arrow-left {
+    margin: auto;
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    font-size: 130%;
+  }
+
+  h4 {
+    font-size: 1.06rem;
+    position: relative;
+    bottom: 23px;
+  }
+
+  .under {
+    font-size: 0.92rem;
+    position: relative;
+    bottom: 42px;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  /* Ici, le CSS s'applique sur les écrans de 445px à 993px de largeur minimum */
+
+  .fa-arrow-left {
+    margin: auto;
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    top: 25px;
+    left: 6%;
+    font-size: 130%;
   }
 }
