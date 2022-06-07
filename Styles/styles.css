@@ -185,9 +185,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e2e0e0;
+  background-color: var(--background-color);
   border-top: 1px solid grey;
   width: 100%;
+}
+
+.menu {
+  background-color: #f9f9f9;
 }
 
 .searchbar_logo {
@@ -201,7 +205,7 @@ header {
 }
 
 #city {
-  background-color: #e2e0e0;
+  background-color: var(--background-color);
   border: none;
   width: 160px;
   font-size: 1.07rem;
@@ -833,14 +837,14 @@ h4 {
   background: -webkit-gradient(
     linear,
     left top,
-    left bottom,
+    right bottom,
     from(#ff79d9),
     to(#9256dc)
   );
-  background: -webkit-linear-gradient(top, #ff79d9, #9256dc);
-  background: -moz-linear-gradient(top, #ff79d9, #9256dc);
-  background: -ms-linear-gradient(top, #ff79d9, #9256dc);
-  background: -o-linear-gradient(top, #ff79d9, #9256dc);
+  background: -webkit-linear-gradient(left top, right bottom #ff79d9, #9256dc);
+  background: -moz-linear-gradient(left top, right bottom, #ff79d9, #9256dc);
+  background: -ms-linear-gradient(left top, right bottom, #ff79d9, #9256dc);
+  background: -o-linear-gradient(left top, right bottom, #ff79d9, #9256dc);
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -852,6 +856,7 @@ h4 {
   font-size: 100%;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   text-decoration: none;
+  border: none;
 }
 
 .button_index {
@@ -879,6 +884,7 @@ h4 {
   background: -ms-linear-gradient(top, #ff8edf, #9d6adc);
   background: -o-linear-gradient(top, #ff8edf, #9d6adc);
   color: white;
+  border: none;
 }
 
 .button:active {
@@ -894,6 +900,7 @@ h4 {
   background: -ms-linear-gradient(top, #ff8edf, #9d6adc);
   background: -o-linear-gradient(top, #ff8edf, #9d6adc);
   color: white;
+  border: none;
 }
 
 @media screen and (min-width: 994px) {
@@ -951,7 +958,7 @@ h4 {
     font-weight: 900;
     color: black;
     position: absolute;
-    top: 40px;
+    top: 45px;
     left: 6%;
     font-size: 130%;
   }
